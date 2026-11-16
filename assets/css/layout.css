@@ -1,0 +1,8 @@
+.site-header{background:var(--ink)}
+.site-header nav{max-width:960px;margin:0 auto;padding:.7rem var(--space);display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;align-items:center}
+.site-header a{color:#fff;text-decoration:none}
+.site-header a:hover{text-decoration:underline}
+.site-header .brand{font-weight:700;margin-right:auto}
+main{max-width:960px;margin:0 auto;padding:2rem var(--space) 3rem}
+.site-footer{text-align:center;color:var(--muted);padding:1.5rem var(--space)}
+.grid{display:grid;gap:var(--space);grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}

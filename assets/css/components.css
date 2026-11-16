@@ -1,0 +1,20 @@
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--space)}
+.card.is-planned{background:transparent;border-style:dashed;color:var(--muted)}
+.button,.quiz-option{font:inherit;cursor:pointer;border-radius:var(--radius);border:1px solid var(--primary);padding:.45rem .9rem}
+.button{background:var(--primary);color:#fff;text-decoration:none;display:inline-block}
+.button:hover{background:var(--primary-dark)}
+.button.secondary{background:#fff;color:var(--primary)}
+.badge{font-size:.85rem;color:var(--muted)}
+.muted{color:var(--muted)}
+.visual-box{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--space);display:flex;justify-content:center;min-height:120px}
+.stack-view{display:flex;flex-direction:column-reverse;gap:6px;width:160px;min-height:100px;padding:8px;border:3px solid var(--ink);border-top:none}
+.stack-item{background:#dbe5ff;border:2px solid var(--primary);border-radius:var(--radius);padding:.4rem;text-align:center;font-weight:600}
+.stack-item.is-top{background:var(--active);border-color:var(--ink);animation:drop .25s ease-out}
+.stack-item.is-top::after{content:"  ← top";font-weight:400;font-size:.8rem}
+@keyframes drop{from{transform:translateY(-14px);opacity:.3}}
+.caption{min-height:3rem;margin:.75rem 0;font-weight:600}
+.quiz-question{margin-bottom:var(--space)}
+.quiz-option{display:block;width:100%;text-align:left;background:#fff;color:var(--ink);margin:.4rem 0}
+.quiz-option:hover{background:#eaf0ff}
+.quiz-feedback.is-correct{color:var(--ok)}
+.quiz-feedback.is-wrong{color:var(--error)}

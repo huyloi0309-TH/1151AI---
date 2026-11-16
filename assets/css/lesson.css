@@ -1,0 +1,6 @@
+.lesson-section{margin:0 0 2rem}
+.controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.75rem 0}
+.controls input{font:inherit;padding:.4rem .6rem;border:1px solid var(--line);border-radius:var(--radius);width:9rem}
+.complexity{border-collapse:collapse;background:var(--surface)}
+.complexity th,.complexity td{border:1px solid var(--line);padding:.4rem .8rem;text-align:left}
+.lesson-nav{display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--space);border-top:2px solid var(--ink);padding-top:var(--space)}

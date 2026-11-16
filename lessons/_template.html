@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- TEMPLATE: copy to lessons/<slug>.html, replace every {{PLACEHOLDER}}, keep the sections in order. Section 7 is the lesson-nav element at the bottom. -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{{Title}} | Data Structures Learning Hub</title>
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/lesson.css">
+</head><body data-root="../" data-lesson="{{slug}}">
+<main>
+  <h1>{{Title}}</h1>
+  <section class="lesson-section"><h2>1. Concept explanation</h2>
+    <p>{{What is it, what problem does it solve, what is its core rule?}}</p></section>
+  <section class="lesson-section"><h2>2. Visual explanation</h2>
+    <div class="visual-box">{{Static diagram of the structure}}</div></section>
+  <section class="lesson-section"><h2>3. Step-by-step animation</h2>
+    <div class="visual-box"><div id="demo-view"></div></div>
+    <p class="caption" id="demo-caption" aria-live="polite">Press Next step to start.</p>
+    <div class="controls"><button class="button" id="demo-next" type="button">Next step</button><button class="button secondary" id="demo-reset" type="button">Reset</button></div></section>
+  <section class="lesson-section" id="practice"><h2>4. Interactive operations</h2>
+    <div class="visual-box"><div id="play-view"></div></div>
+    <p class="caption" id="play-caption" aria-live="polite"></p>
+    <div class="controls">{{input and operation buttons}}</div></section>
+  <section class="lesson-section"><h2>5. Real-world applications</h2>
+    <ul><li>{{Example 1}}</li><li>{{Example 2}}</li></ul>
+    <h3>Complexity</h3>
+    <table class="complexity"><tr><th>Operation</th><th>Time</th></tr><tr><td>{{op}}</td><td>{{O(?)}}</td></tr></table></section>
+  <section class="lesson-section" id="quiz-section"><h2>6. Practice and knowledge check</h2><div id="quiz"></div></section>
+  <nav class="lesson-nav" id="lesson-nav" aria-label="Lesson navigation"></nav>
+</main>
+<script type="module" src="../assets/js/shared/nav.js"></script>
+<script type="module" src="../assets/js/pages/{{slug}}-page.js"></script>
+</body></html>
